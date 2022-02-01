@@ -1,2 +1,7 @@
 .idea
 /spring-boot/spring-boot.iml
+/spring-boot/target/
+/lib/
+/coinanalyzer/.mvn/
+/coinanalyzer/target/
+/spring-boot-tdd/target/
