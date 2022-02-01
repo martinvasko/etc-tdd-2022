@@ -1,8 +1,6 @@
 package at.etc;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.logging.Logger;
 
@@ -26,5 +24,15 @@ public class MainTest {
     @Test
     public void simpleTest() {
         assertTrue(true);
+    }
+
+    @AfterEach
+    void tearDown() {
+        log.info("@AfterEach - executes after each test method");
+    }
+
+    @AfterAll
+    static void done() {
+        log.info("@AfterAll - executed after all test methods");
     }
 }
