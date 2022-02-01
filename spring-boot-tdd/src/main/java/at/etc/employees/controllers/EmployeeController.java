@@ -1,5 +1,6 @@
 package at.etc.employees.controllers;
 
+import javax.validation.Valid;
 import javax.validation.ValidationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
